@@ -17,7 +17,7 @@
             height: 40px;
         }
         .carousel-item {
-            height: 400px;
+            height: 600px;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -29,6 +29,29 @@
             transform: translate(-50%, -50%);
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .carousel-caption h1 {
+            font-size: 48px;
+        }
+        .carousel-caption .btn {
+            font-size: 24px;
+            padding: 10px 20px;
+        }
+        .carousel-caption .d-none {
+            display: none;
+        }
+        @media (max-width: 767px) {
+            .carousel-item {
+                height: 300px;
+            }
+            .carousel-caption .d-md-block {
+                display: none;
+            }
+            .carousel-caption .d-none {
+                display: block;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
         }
         .features {
             padding: 50px 0;
@@ -113,14 +136,14 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <!-- Aquí puedes agregar tus imágenes o videos -->
-            <div class="carousel-item active" style="background-image: url('/nombre-del-proyecto/public/images/gestion-de-proyectos-arquitectura-arquitectos-bim-revit-master-2.jpg')"></div>
+            <div class="carousel-item active" style="background-image: url('/nombre-del-proyecto/public/images/abridora.jpg')"></div>
+            <div class="carousel-item" style="background-image: url('/nombre-del-proyecto/public/images/gestion-de-proyectos-arquitectura-arquitectos-bim-revit-master-2.jpg')"></div>
             <div class="carousel-item" style="background-image: url('/nombre-del-proyecto/public/images/PRESUPUESTACIÓN-DE-OBRAS-Y-GESTION-de-PROYECTOS-de-CONSTRUCCIÓN.jpg')"></div>
-            <div class="carousel-item" style="background-image: url('/nombre-del-proyecto/public/images/abridora.jpg')"></div>
         </div>
         <div class="carousel-caption">
-            <h1 class="display-3">Construyendo el futuro de México</h1>
-            <a href="#" class="btn btn-primary btn-lg">Más información</a>
+            <h1 class="d-none d-md-block">Construyendo el futuro de México</h1>
+            <a href="#" class="btn btn-primary btn-lg d-none d-md-inline-block">Más información</a>
+            <p class="d-block d-md-none">Construyendo el futuro de México</p>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -170,7 +193,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="client-item">
-                        <img src="/nombre-del-proyecto/public/images/279292810_301260982172455_1250416915163353206_n.jpg" alt="Cliente 2">
+                        <img src="/nombre-del-proyecto/public/images/escudo-del-gobierno-de-chiapas-vertical.jpg" alt="Cliente 2">
                         <h3>Gobierno del Estado de Chiapas</h3>
                         <p>Hemos participado activamente en la construcción de obras públicas en el estado de Chiapas, incluyendo escuelas, hospitales y carreteras. Nuestro compromiso con el desarrollo de Chiapas ha sido constante y hemos contribuido significativamente al bienestar de su población.</p>
                     </div>
@@ -181,7 +204,7 @@
                     <div class="client-item">
                         <img src="/nombre-del-proyecto/public/images/unnamed.png" alt="Cliente 3">
                         <h3>Municipio de Tuxtla Gutiérrez</h3>
-                        <p>Hemos realizados numerosos proyectos de desarrollo urbano en la ciudad de Tuxtla Gutiérrez, mejorando la infraestructura y la calidad de vida de sus habitantes. Nuestro trabajo en colaboración con el municipio ha sido esencial para el crecimiento y modernización de la ciudad.</p>
+                        <p>Hemos realizado numerosos proyectos de desarrollo urbano en la ciudad de Tuxtla Gutiérrez, mejorando la infraestructura y la calidad de vida de sus habitantes. Nuestro trabajo en colaboración con el municipio ha sido esencial para el crecimiento y modernización de la ciudad.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
